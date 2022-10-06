@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select:none;
+}
+
+
+.landing-container{
+    height:100vh;
+    display:flex;
+}
+
+.left-section{
+    height:100vh;
+    width:55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-section{
+    background:url(./LoginPage/beach.jpg);
+    background-position: center;
+    background-size:100% 100%;
+    height:100vh;
+    width:45%;
+}
+
+
+.title-container{
+    width:80%;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.body-container{
+    width:70%;
+    height:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(-40%);
+    transition: .3s;
+}
+
+#sign-in-btn{
+    align-self: flex-start;
+    border:none;
+    outline:none;
+    background:#8DC2EE;
+    padding:1rem 2.5rem;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor:pointer;
+    transition:.3s;
+    position:relative;
+    top:50px;
+}
+
+#sign-in-btn2{
+    border:none;
+    outline:none;
+    background:#8DC2EE;
+    padding:1rem 2.5rem;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor:pointer;
+    transition:.3s;
+    margin:1rem;
+}
+
+
+#sign-in-btn:hover , #sign-in-btn2:hover{
+    transform: scale(1.1);
+}
+
+#login-form{
+    position:absolute;
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:0px 0px 5px;
+    padding:2rem 0;
+    transition: .3s;
+    margin-top:150px;
+}
+
+
+#login-form>div{
+    padding:1rem;
+    background:#fff;
+    margin:1rem;
+    box-shadow: 0px 0px 5px;
+}
+
+#login-form input{
+    outline:none;
+    border:none;
+    padding:.8rem;
+}
+
+.hidden{
+    transform: translate(-180%);
+}
+
+
+
+
+
+.demande{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height:90%;
+    width:600px;
+    position: relative;
+    width:80%;
+}
+
+.header{
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:2px solid black;
+}
+
+
+#conge-form{
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:3rem;
+    
+
+    &>div{
+        display: flex;
+    }
+
+    & input , textarea , select{
+        margin-left:2rem;
+    }
+
+}
+
+.btn-group{
+    align-self: flex-end;
+
+    & button{
+        padding:.3rem .6rem;
+    }
+}
+
+.dashboard{
+    background:dodgerblue;
+    height:100vh;
+    width:20%;
+}
+
+.user{
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    color:#fff;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:60%;
+    justify-content: space-around;
+}
+
+ul li{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    padding:1rem;
+    text-align: start;
+}
+
+ul div{
+    display: flex;
+    justify-content: flex-start;
+    width:70%;
+    cursor: pointer;
+}
+
+
+
+.img{
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
